@@ -28,7 +28,7 @@ python -m pytest tests/            # 218 tests, about 20 seconds
 Both datasets are public. `docs/DATASETS.md` lists the official links, licences, SHA-256 hashes and where files go.
 
 * **InSDN** is not included. Download it from the official page and put the three CSV files in `data/InSDN/`.
-* **CICIDS2017**: the 56,661-flow subsample used in the manuscript is included at `data/CICIDS2017/CICIDS2017.csv` (SHA-256 `03ba3626a0f9bb73b90c56772893e68b0577285130891cd7d811542c17b032dd`). It is a subsample of the MachineLearningCSV release (Sharafaldin et al., ICISSP 2018, doi:10.5220/0006639801080116). The dataset's terms ask users to cite that paper.
+* **CICIDS2017**: the 56,661-flow subsample used in the manuscript is included at `data/CICIDS2017/CICIDS2017.csv` (SHA-256 `03ba3626a0f9bb73b90c56772893e68b0577285130891cd7d811542c17b032dd`). It is derived from the public CSV flows of CICIDS2017 (Sharafaldin et al., ICISSP 2018, doi:10.5220/0006639801080116). We do not know how it was drawn from the full release. The dataset's terms ask users to cite that paper.
 
 ## Reproduce
 
