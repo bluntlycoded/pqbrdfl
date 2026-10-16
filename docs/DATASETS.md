@@ -25,7 +25,7 @@ Check with `shasum -a 256 data/InSDN/*.csv data/CICIDS2017/*.csv`.
 
 ## The CICIDS2017 subsample
 
-The CICIDS2017 results in `results/cicids/` come from a 56,661-flow subsample of the MachineLearningCVE release. We do not know how this subsample was drawn from the full release, so the CICIDS2017 results are a secondary check only. The subsample has seven classes, and Infiltration (36 flows) is dropped by the 50-flow minimum. It is included in this repository at `data/CICIDS2017/CICIDS2017.csv` (19.9 MB); its hash is given above. If you use it, cite Sharafaldin et al. (ICISSP 2018).
+The CICIDS2017 results in `results/cicids/` come from a 56,661-flow subsample derived from the public CSV flows of CICIDS2017. We do not know how this subsample was drawn from the full release, so the CICIDS2017 results are a secondary check only. The subsample has seven classes, and Infiltration (36 flows) is dropped by the 50-flow minimum. It is included in this repository at `data/CICIDS2017/CICIDS2017.csv` (19.9 MB); its hash is given above. If you use it, cite Sharafaldin et al. (ICISSP 2018).
 
 ## Reproduce on InSDN
 
