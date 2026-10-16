@@ -1,0 +1,103 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.3,
+  "attack": "signflip",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "fedavg",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 1,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [
+  "sw00",
+  "sw02",
+  "sw07",
+  "sw08",
+  "sw12",
+  "sw17"
+ ],
+ "final": {
+  "accuracy": 0.03532084043157297,
+  "macro_f1": 0.011371946760274974,
+  "precision": 0.512549687677456,
+  "recall": 1.0,
+  "f1": 0.6777293887971167,
+  "fpr": 1.0,
+  "auc": 0.5012814538676608,
+  "backdoor_asr": 0.0,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.03532084043157297,
+   "macro_f1": 0.011371946760274974,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5126980428704566,
+   "backdoor_asr": 0.0,
+   "round": 10
+  },
+  {
+   "accuracy": 0.03532084043157297,
+   "macro_f1": 0.011371946760274974,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.500232991612302,
+   "backdoor_asr": 0.0,
+   "round": 20
+  },
+  {
+   "accuracy": 0.03532084043157297,
+   "macro_f1": 0.011371946760274974,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5004659832246039,
+   "backdoor_asr": 0.0,
+   "round": 30
+  },
+  {
+   "accuracy": 0.03532084043157297,
+   "macro_f1": 0.011371946760274974,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5012814538676608,
+   "backdoor_asr": 0.0,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 3.1360655839089304,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

@@ -1,0 +1,103 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.3,
+  "attack": "signflip",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "fedavg",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 0,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [
+  "sw00",
+  "sw04",
+  "sw05",
+  "sw08",
+  "sw10",
+  "sw12"
+ ],
+ "final": {
+  "accuracy": 0.3756956274843839,
+  "macro_f1": 0.11889982029844752,
+  "precision": 0.512549687677456,
+  "recall": 1.0,
+  "f1": 0.6777293887971167,
+  "fpr": 1.0,
+  "auc": 0.5,
+  "backdoor_asr": 0.0,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.3610448608745031,
+   "macro_f1": 0.12562606924629297,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 10
+  },
+  {
+   "accuracy": 0.37467348097671777,
+   "macro_f1": 0.10996607861553427,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 20
+  },
+  {
+   "accuracy": 0.3751277683134583,
+   "macro_f1": 0.11862793477357582,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 30
+  },
+  {
+   "accuracy": 0.3756956274843839,
+   "macro_f1": 0.11889982029844752,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 3.233961792080663,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

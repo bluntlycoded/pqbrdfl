@@ -1,0 +1,878 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.2,
+  "attack": "signflip",
+  "protocol_attack": "wrap",
+  "member_attack": "corrupt_agg",
+  "aggregator": "pqbrdfl_cc_norange",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 0,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [
+  "sw05",
+  "sw09",
+  "sw11",
+  "sw14"
+ ],
+ "final": {
+  "accuracy": 0.9736513344690517,
+  "macro_f1": 0.9597195076779919,
+  "precision": 0.9933195116332643,
+  "recall": 0.9554619986705074,
+  "f1": 0.9740230404337024,
+  "fpr": 0.006756756756756757,
+  "auc": 0.9974630089031397,
+  "backdoor_asr": 0.38776866829160206,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.9614991482112436,
+   "macro_f1": 0.9172209159800709,
+   "precision": 0.9851508120649652,
+   "recall": 0.9408375803235098,
+   "f1": 0.9624844157316106,
+   "fpr": 0.014911463187325256,
+   "auc": 0.9931601241437958,
+   "backdoor_asr": 0.2929315311322845,
+   "round": 10
+  },
+  {
+   "accuracy": 0.9697898921067575,
+   "macro_f1": 0.9341720551539384,
+   "precision": 0.9869385884509624,
+   "recall": 0.9543540881896743,
+   "f1": 0.9703728737185986,
+   "fpr": 0.013280521901211557,
+   "auc": 0.9962182358554527,
+   "backdoor_asr": 0.28561932195878575,
+   "round": 20
+  },
+  {
+   "accuracy": 0.9742191936399773,
+   "macro_f1": 0.9543428530504436,
+   "precision": 0.9908466819221968,
+   "recall": 0.9594504764015067,
+   "f1": 0.9748958685128899,
+   "fpr": 0.009319664492078284,
+   "auc": 0.9972027583563605,
+   "backdoor_asr": 0.3405716818081099,
+   "round": 30
+  },
+  {
+   "accuracy": 0.9736513344690517,
+   "macro_f1": 0.9597195076779919,
+   "precision": 0.9933195116332643,
+   "recall": 0.9554619986705074,
+   "f1": 0.9740230404337024,
+   "fpr": 0.006756756756756757,
+   "auc": 0.9974630089031397,
+   "backdoor_asr": 0.38776866829160206,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 37.78494254103862,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ },
+ "protocol": {
+  "bytes": [
+   {
+    "epk": 115920,
+    "shares": 41256000,
+    "commit": 88272,
+    "member_scalars": 835920,
+    "member_agg": 2033424
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   },
+   {
+    "epk": 28980,
+    "shares": 10314000,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 508356
+   }
+  ],
+  "time": [
+   {
+    "member_keys": 0.006252374965697527,
+    "client_share_seal": 1.3238990418612957,
+    "member_open": 0.19124679209198803,
+    "member_validate": 0.8096806679386646,
+    "public_decode": 0.030248623806983232,
+    "aggregate": 0.26546408305875957
+   },
+   {
+    "member_keys": 0.0011865830747410655,
+    "client_share_seal": 0.31845433404669166,
+    "member_open": 0.04264933301601559,
+    "member_validate": 0.18897779192775488,
+    "public_decode": 0.006987791042774916,
+    "aggregate": 0.06428058305755258
+   },
+   {
+    "member_keys": 0.001418416970409453,
+    "client_share_seal": 0.3366084590088576,
+    "member_open": 0.05764712509699166,
+    "member_validate": 0.21575924998614937,
+    "public_decode": 0.006667291978374124,
+    "aggregate": 0.0685296249575913
+   },
+   {
+    "member_keys": 0.0015506669878959656,
+    "client_share_seal": 0.32044562499504536,
+    "member_open": 0.04254262498579919,
+    "member_validate": 0.19132766604889184,
+    "public_decode": 0.0069329580292105675,
+    "aggregate": 0.06570095790084451
+   },
+   {
+    "member_keys": 0.0012816659873351455,
+    "client_share_seal": 0.32122487504966557,
+    "member_open": 0.04561666597146541,
+    "member_validate": 0.23481862503103912,
+    "public_decode": 0.007452000048942864,
+    "aggregate": 0.09535299998242408
+   },
+   {
+    "member_keys": 0.002068375004455447,
+    "client_share_seal": 0.35262404195964336,
+    "member_open": 0.04801975004374981,
+    "member_validate": 0.21127870795316994,
+    "public_decode": 0.007344334037043154,
+    "aggregate": 0.07038387493230402
+   },
+   {
+    "member_keys": 0.0017291249241679907,
+    "client_share_seal": 0.474075167090632,
+    "member_open": 0.06315199995879084,
+    "member_validate": 0.22362391697242856,
+    "public_decode": 0.007641166914254427,
+    "aggregate": 0.06755804095882922
+   },
+   {
+    "member_keys": 0.0017610000213608146,
+    "client_share_seal": 0.44266883295495063,
+    "member_open": 0.06551533297169954,
+    "member_validate": 0.21866987505927682,
+    "public_decode": 0.005974999978207052,
+    "aggregate": 0.06749545806087554
+   },
+   {
+    "member_keys": 0.0015889169881120324,
+    "client_share_seal": 0.510361708002165,
+    "member_open": 0.08462612493894994,
+    "member_validate": 0.2621048749424517,
+    "public_decode": 0.010715749929659069,
+    "aggregate": 0.11903712502680719
+   },
+   {
+    "member_keys": 0.0018442909931764007,
+    "client_share_seal": 0.5464122920529917,
+    "member_open": 0.06977795890998095,
+    "member_validate": 0.2808439169311896,
+    "public_decode": 0.011059209005907178,
+    "aggregate": 0.10207912500482053
+   },
+   {
+    "member_keys": 0.00142391596455127,
+    "client_share_seal": 0.4658438339829445,
+    "member_open": 0.05825354205444455,
+    "member_validate": 0.30831283307634294,
+    "public_decode": 0.020376125001348555,
+    "aggregate": 0.11148070800118148
+   },
+   {
+    "member_keys": 0.001648708013817668,
+    "client_share_seal": 0.4495020409813151,
+    "member_open": 0.06088125007227063,
+    "member_validate": 0.2576267080148682,
+    "public_decode": 0.0083543750224635,
+    "aggregate": 0.0802188339876011
+   },
+   {
+    "member_keys": 0.0025831250241026282,
+    "client_share_seal": 0.38872175000142306,
+    "member_open": 0.047069458989426494,
+    "member_validate": 0.1993175409734249,
+    "public_decode": 0.006543374969623983,
+    "aggregate": 0.0664920419221744
+   },
+   {
+    "member_keys": 0.0011684580240398645,
+    "client_share_seal": 0.3604397499002516,
+    "member_open": 0.047175707994028926,
+    "member_validate": 0.1953306250507012,
+    "public_decode": 0.007752000004984438,
+    "aggregate": 0.065070541924797
+   },
+   {
+    "member_keys": 0.001937541994266212,
+    "client_share_seal": 0.4332032080274075,
+    "member_open": 0.056584500009194016,
+    "member_validate": 0.2114982909988612,
+    "public_decode": 0.0071953750448301435,
+    "aggregate": 0.07911395793780684
+   },
+   {
+    "member_keys": 0.0011114999651908875,
+    "client_share_seal": 0.35947208292782307,
+    "member_open": 0.05064549995586276,
+    "member_validate": 0.21167474996764213,
+    "public_decode": 0.0064261669758707285,
+    "aggregate": 0.06585579097736627
+   },
+   {
+    "member_keys": 0.001543541089631617,
+    "client_share_seal": 0.3962257920065895,
+    "member_open": 0.051064667059108615,
+    "member_validate": 0.2300316250184551,
+    "public_decode": 0.0072749159298837185,
+    "aggregate": 0.0809865000192076
+   },
+   {
+    "member_keys": 0.001480333972722292,
+    "client_share_seal": 0.3705961250234395,
+    "member_open": 0.047137374989688396,
+    "member_validate": 0.20529470907058567,
+    "public_decode": 0.0066575410310178995,
+    "aggregate": 0.08133154199458659
+   },
+   {
+    "member_keys": 0.0013125829864293337,
+    "client_share_seal": 0.3535201670601964,
+    "member_open": 0.04606374993454665,
+    "member_validate": 0.19353429204784334,
+    "public_decode": 0.006518582929857075,
+    "aggregate": 0.07116095803212374
+   },
+   {
+    "member_keys": 0.0013899169862270355,
+    "client_share_seal": 0.3976067079929635,
+    "member_open": 0.05535429192241281,
+    "member_validate": 0.22301874996628612,
+    "public_decode": 0.008831582963466644,
+    "aggregate": 0.07949116604868323
+   },
+   {
+    "member_keys": 0.002072917064651847,
+    "client_share_seal": 0.40408345800824463,
+    "member_open": 0.05301708297338337,
+    "member_validate": 0.2395903749857098,
+    "public_decode": 0.008159959106706083,
+    "aggregate": 0.08353399997577071
+   },
+   {
+    "member_keys": 0.0013633749913424253,
+    "client_share_seal": 0.40920491598080844,
+    "member_open": 0.0494832081021741,
+    "member_validate": 0.23293491604272276,
+    "public_decode": 0.006463416037149727,
+    "aggregate": 0.07212962489575148
+   },
+   {
+    "member_keys": 0.001262374920770526,
+    "client_share_seal": 0.38221429206896573,
+    "member_open": 0.048642916954122484,
+    "member_validate": 0.20656766695901752,
+    "public_decode": 0.007025999948382378,
+    "aggregate": 0.08005004201550037
+   },
+   {
+    "member_keys": 0.001300874981097877,
+    "client_share_seal": 0.3729789999779314,
+    "member_open": 0.05305350001435727,
+    "member_validate": 0.2345042919041589,
+    "public_decode": 0.006565792020410299,
+    "aggregate": 0.08055945893283933
+   },
+   {
+    "member_keys": 0.0015780000248923898,
+    "client_share_seal": 0.3885256249923259,
+    "member_open": 0.04790212505031377,
+    "member_validate": 0.23116679105442017,
+    "public_decode": 0.008064458030276,
+    "aggregate": 0.07434283301699907
+   },
+   {
+    "member_keys": 0.001252082991413772,
+    "client_share_seal": 0.39739179192110896,
+    "member_open": 0.060033292043954134,
+    "member_validate": 0.2125940000405535,
+    "public_decode": 0.007042167009785771,
+    "aggregate": 0.07917737495154142
+   },
+   {
+    "member_keys": 0.0012871669605374336,
+    "client_share_seal": 0.465167541988194,
+    "member_open": 0.06309999991208315,
+    "member_validate": 0.2215372499777004,
+    "public_decode": 0.007127374992705882,
+    "aggregate": 0.07461166707798839
+   },
+   {
+    "member_keys": 0.001966291922144592,
+    "client_share_seal": 0.41852470801677555,
+    "member_open": 0.058499749982729554,
+    "member_validate": 0.24567308300174773,
+    "public_decode": 0.006894167046993971,
+    "aggregate": 0.08069675008300692
+   },
+   {
+    "member_keys": 0.0016968330601230264,
+    "client_share_seal": 0.42322712496388704,
+    "member_open": 0.05236812506336719,
+    "member_validate": 0.21009495807811618,
+    "public_decode": 0.007333833025768399,
+    "aggregate": 0.06914583302568644
+   },
+   {
+    "member_keys": 0.0015085421036928892,
+    "client_share_seal": 0.3891670829616487,
+    "member_open": 0.0482199169928208,
+    "member_validate": 0.2069291661027819,
+    "public_decode": 0.006636250065639615,
+    "aggregate": 0.07368862500879914
+   },
+   {
+    "member_keys": 0.001808999921195209,
+    "client_share_seal": 0.372737625031732,
+    "member_open": 0.05022670794278383,
+    "member_validate": 0.2080642500659451,
+    "public_decode": 0.006495124893262982,
+    "aggregate": 0.0693795420229435
+   },
+   {
+    "member_keys": 0.001535917050205171,
+    "client_share_seal": 0.3869740000227466,
+    "member_open": 0.051610250025987625,
+    "member_validate": 0.21951641701161861,
+    "public_decode": 0.00859066704288125,
+    "aggregate": 0.0746608329936862
+   },
+   {
+    "member_keys": 0.0013068749103695154,
+    "client_share_seal": 0.42140387499239296,
+    "member_open": 0.052301666932180524,
+    "member_validate": 0.21280412503983825,
+    "public_decode": 0.007067625061608851,
+    "aggregate": 0.0686251251026988
+   },
+   {
+    "member_keys": 0.0015532909892499447,
+    "client_share_seal": 0.3645564999897033,
+    "member_open": 0.05025391699746251,
+    "member_validate": 0.19612624996807426,
+    "public_decode": 0.0070682920049875975,
+    "aggregate": 0.06893683294765651
+   },
+   {
+    "member_keys": 0.001395624945871532,
+    "client_share_seal": 0.3613328750943765,
+    "member_open": 0.04799716698471457,
+    "member_validate": 0.20266004209406674,
+    "public_decode": 0.006558666005730629,
+    "aggregate": 0.06813033309299499
+   },
+   {
+    "member_keys": 0.0016758330166339874,
+    "client_share_seal": 0.36207187501713634,
+    "member_open": 0.05186879204120487,
+    "member_validate": 0.22200979199260473,
+    "public_decode": 0.0077731250785291195,
+    "aggregate": 0.08149154204875231
+   },
+   {
+    "member_keys": 0.0017137080430984497,
+    "client_share_seal": 0.3938108750153333,
+    "member_open": 0.053167250007390976,
+    "member_validate": 0.2082622500602156,
+    "public_decode": 0.007616583025082946,
+    "aggregate": 0.07410929095931351
+   },
+   {
+    "member_keys": 0.0021951249800622463,
+    "client_share_seal": 0.44405804201960564,
+    "member_open": 0.055365415988489985,
+    "member_validate": 0.2199896660167724,
+    "public_decode": 0.008827499928884208,
+    "aggregate": 0.07900558307301253
+   },
+   {
+    "member_keys": 0.001358749927021563,
+    "client_share_seal": 0.4737105000531301,
+    "member_open": 0.12571387505158782,
+    "member_validate": 0.2958964160643518,
+    "public_decode": 0.009718333021737635,
+    "aggregate": 0.1278524580411613
+   },
+   {
+    "member_keys": 0.0028019589371979237,
+    "client_share_seal": 1.1062230410752818,
+    "member_open": 0.24847087496891618,
+    "member_validate": 0.3242657920345664,
+    "public_decode": 0.011091124964877963,
+    "aggregate": 0.10946075001265854
+   }
+  ],
+  "rejected": [
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {},
+   {}
+  ],
+  "flagged": [
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   [],
+   []
+  ],
+  "captured": 0,
+  "breach": 0,
+  "aborted": 0,
+  "attempts": [
+   4,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "banned": [
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4,
+   4
+  ]
+ }
+}

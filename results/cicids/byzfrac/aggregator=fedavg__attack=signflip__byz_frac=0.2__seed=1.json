@@ -1,0 +1,101 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.2,
+  "attack": "signflip",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "fedavg",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 1,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [
+  "sw08",
+  "sw09",
+  "sw14",
+  "sw19"
+ ],
+ "final": {
+  "accuracy": 0.07484383872799545,
+  "macro_f1": 0.07515897923823098,
+  "precision": 0.512549687677456,
+  "recall": 1.0,
+  "f1": 0.6777293887971167,
+  "fpr": 1.0,
+  "auc": 0.5,
+  "backdoor_asr": 0.0,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.07632027257240205,
+   "macro_f1": 0.10685078242698999,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.21820113644975925,
+   "backdoor_asr": 0.0,
+   "round": 10
+  },
+  {
+   "accuracy": 0.06132879045996593,
+   "macro_f1": 0.053256546468978226,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 20
+  },
+  {
+   "accuracy": 0.0642816581487791,
+   "macro_f1": 0.06490471932929716,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 30
+  },
+  {
+   "accuracy": 0.07484383872799545,
+   "macro_f1": 0.07515897923823098,
+   "precision": 0.512549687677456,
+   "recall": 1.0,
+   "f1": 0.6777293887971167,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 3.095346292015165,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

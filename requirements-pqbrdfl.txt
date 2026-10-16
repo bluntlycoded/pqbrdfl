@@ -1,0 +1,14 @@
+# PQ-BRDFL (merged framework).  The SAMACP prototype keeps using requirements.txt.
+numpy==2.5.3
+scipy==1.18.1
+scikit-learn==1.9.1
+pandas==3.0.6
+matplotlib==3.11.2
+cryptography==50.0.1
+# Pure-Python FIPS 203/204 references; ML-KEM_A / ML-DSA_A override their hash hooks,
+# so these versions are pinned exactly (tests/test_pq_a.py checks bit-exact equivalence).
+kyber-py==1.2.0
+dilithium-py==1.4.0
+# liboqs Python bindings (needs the liboqs C library, >= 0.15, on the system)
+liboqs-python @ git+https://github.com/open-quantum-safe/liboqs-python@6ecaef57c8db3c78d3e67253e452a97d0db9b106
+pytest==9.1.1

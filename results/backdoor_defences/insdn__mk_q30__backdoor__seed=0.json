@@ -1,0 +1,73 @@
+{
+ "config": {
+  "dataset": "insdn",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.2,
+  "attack": "backdoor",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "mk_cc",
+  "rounds": 30,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 0,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 30,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.3,
+  "worker_momentum": 0.0,
+  "byz_momentum": true,
+  "agg_noise": 0.0,
+  "input_clip": false,
+  "trigger": "oor"
+ },
+ "dataset": "InSDN",
+ "synthetic_data": false,
+ "model_params": 6535,
+ "byzantine": [
+  "sw05",
+  "sw09",
+  "sw11",
+  "sw14"
+ ],
+ "final": {
+  "accuracy": 0.9929388848307767,
+  "macro_f1": 0.853630316079659,
+  "precision": 0.9977633268442199,
+  "recall": 0.9995020953487407,
+  "f1": 0.9986319542326506,
+  "fpr": 0.004198413932514383,
+  "auc": 0.9997343405254765,
+  "backdoor_asr": 0.0006223808140741049,
+  "round": 30
+ },
+ "history": [
+  {
+   "accuracy": 0.9929388848307767,
+   "macro_f1": 0.853630316079659,
+   "precision": 0.9977633268442199,
+   "recall": 0.9995020953487407,
+   "f1": 0.9986319542326506,
+   "fpr": 0.004198413932514383,
+   "auc": 0.9997343405254765,
+   "backdoor_asr": 0.0006223808140741049,
+   "round": 30
+  }
+ ],
+ "wall_seconds": 5.340791416005231,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

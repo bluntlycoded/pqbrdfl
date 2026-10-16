@@ -1,0 +1,101 @@
+{
+ "config": {
+  "dataset": "insdn",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.2,
+  "attack": "signflip",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "dfl_gossip",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 0,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "InSDN",
+ "synthetic_data": false,
+ "model_params": 6535,
+ "byzantine": [
+  "sw05",
+  "sw09",
+  "sw11",
+  "sw14"
+ ],
+ "final": {
+  "accuracy": 0.007575142710277845,
+  "macro_f1": 0.0021480546679913002,
+  "precision": 0.6520304087871656,
+  "recall": 1.0,
+  "f1": 0.789368531376916,
+  "fpr": 1.0,
+  "auc": 0.5,
+  "backdoor_asr": 0.0,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.007575142710277845,
+   "macro_f1": 0.0021480546679913002,
+   "precision": 0.6520304087871656,
+   "recall": 1.0,
+   "f1": 0.789368531376916,
+   "fpr": 1.0,
+   "auc": 0.7117100325948442,
+   "backdoor_asr": 0.0,
+   "round": 10
+  },
+  {
+   "accuracy": 0.007575142710277845,
+   "macro_f1": 0.0021480546679913002,
+   "precision": 0.6520304087871656,
+   "recall": 1.0,
+   "f1": 0.789368531376916,
+   "fpr": 1.0,
+   "auc": 0.5025656974032032,
+   "backdoor_asr": 0.0,
+   "round": 20
+  },
+  {
+   "accuracy": 0.007575142710277845,
+   "macro_f1": 0.0021480546679913002,
+   "precision": 0.6520304087871656,
+   "recall": 1.0,
+   "f1": 0.789368531376916,
+   "fpr": 1.0,
+   "auc": 0.50167159073239,
+   "backdoor_asr": 0.0,
+   "round": 30
+  },
+  {
+   "accuracy": 0.007575142710277845,
+   "macro_f1": 0.0021480546679913002,
+   "precision": 0.6520304087871656,
+   "recall": 1.0,
+   "f1": 0.789368531376916,
+   "fpr": 1.0,
+   "auc": 0.5,
+   "backdoor_asr": 0.0,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 23.890182542032562,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

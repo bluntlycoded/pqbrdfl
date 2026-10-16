@@ -1,0 +1,582 @@
+{
+ "machine": "macOS-26.2-arm64-arm-64bit-Mach-O",
+ "processor": "arm",
+ "python": "3.13.3",
+ "primitives": [
+  {
+   "backend": "fips",
+   "kem": "ML-KEM-512",
+   "sig": "ML-DSA-44",
+   "kem_keygen_ms": 0.011750031262636185,
+   "encaps_ms": 0.012916047126054764,
+   "decaps_ms": 0.014208024367690086,
+   "sig_keygen_ms": 0.03241701051592827,
+   "sign_ms": 0.06870797369629145,
+   "verify_ms": 0.030958501156419516,
+   "kem_pk_B": 800,
+   "kem_ct_B": 768,
+   "sig_pk_B": 1312,
+   "sig_B": 2420
+  },
+  {
+   "backend": "classical",
+   "kem": "X25519-DHKEM",
+   "sig": "Ed25519",
+   "kem_keygen_ms": 0.08925003930926323,
+   "encaps_ms": 0.26681245071813464,
+   "decaps_ms": 0.25497900787740946,
+   "sig_keygen_ms": 0.08754106238484383,
+   "sign_ms": 0.16649998724460602,
+   "verify_ms": 0.18412491772323847,
+   "kem_pk_B": 32,
+   "kem_ct_B": 32,
+   "sig_pk_B": 32,
+   "sig_B": 64
+  },
+  {
+   "backend": "ascon",
+   "kem": "ML-KEM_A-512",
+   "sig": "ML-DSA_A-44",
+   "kem_pk_B": 800,
+   "kem_ct_B": 768,
+   "sig_pk_B": 1312,
+   "sig_B": 2420,
+   "kem_keygen_ms": 16.046375036239624,
+   "kem_keygen_ascon_p_calls": 684,
+   "encaps_ms": 16.689084004610777,
+   "encaps_ascon_p_calls": 694,
+   "decaps_ms": 20.133665995672345,
+   "decaps_ascon_p_calls": 800,
+   "sig_keygen_ms": 48.60700003337115,
+   "sig_keygen_ascon_p_calls": 2052,
+   "sign_ms": 114.12270797882229,
+   "sign_ascon_p_calls": 3939,
+   "verify_ms": 47.8758339304477,
+   "verify_ascon_p_calls": 1957
+  }
+ ],
+ "protocol_scaling": [
+  {
+   "backend": "fips",
+   "policy": "correct",
+   "norm_mode": "exact",
+   "n": 20,
+   "m": 17,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 0.835394165944308,
+   "phases_s": {
+    "member_keys": 0.0019893330754712224,
+    "client_share_seal": 0.36808512499555945,
+    "member_open": 0.05446758400648832,
+    "member_validate": 0.3202389170182869,
+    "public_decode": 0.011453666957095265,
+    "aggregate": 0.0725809580180794
+   },
+   "bytes": {
+    "epk": 54740,
+    "shares": 18875440,
+    "commit": 41684,
+    "zero_sharing": 923712,
+    "member_scalars": 220660,
+    "member_agg": 929900
+   },
+   "bytes_total": 21046136,
+   "bytes_per_agent_upload": 943772.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 52920,
+   "max_abs_error_vs_plaintext_cc": 2.1551622777487428e-05,
+   "relative_error_vs_plaintext_cc": 0.002501544135375847
+  },
+  {
+   "backend": "fips",
+   "policy": "correct",
+   "norm_mode": "exact",
+   "n": 20,
+   "m": 17,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 4.00850358302705,
+   "phases_s": {
+    "member_keys": 0.0015673330053687096,
+    "client_share_seal": 1.9202810829738155,
+    "member_open": 0.28098775004036725,
+    "member_validate": 1.409454375039786,
+    "public_decode": 0.010234959074296057,
+    "aggregate": 0.3805949999950826
+   },
+   "bytes": {
+    "epk": 54740,
+    "shares": 137100240,
+    "commit": 41684,
+    "zero_sharing": 923712,
+    "member_scalars": 220660,
+    "member_agg": 6841140
+   },
+   "bytes_total": 145182176,
+   "bytes_per_agent_upload": 6855012.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 400640,
+   "max_abs_error_vs_plaintext_cc": 2.3275482063788745e-05,
+   "relative_error_vs_plaintext_cc": 0.0024847991708262535
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 20,
+   "m": 9,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 0.3737281250068918,
+   "phases_s": {
+    "member_keys": 0.0008217089343816042,
+    "client_share_seal": 0.19293708400800824,
+    "member_open": 0.027218958013691008,
+    "member_validate": 0.10906104207970202,
+    "public_decode": 0.00406862492673099,
+    "aggregate": 0.03794300009030849
+   },
+   "bytes": {
+    "epk": 28980,
+    "shares": 9992880,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 492300
+   },
+   "bytes_total": 10745208,
+   "bytes_per_agent_upload": 499644.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 52920,
+   "max_abs_error_vs_plaintext_cc": 0.00035813737381843336,
+   "relative_error_vs_plaintext_cc": 0.04189614252149718
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 20,
+   "m": 9,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 2.6218342080246657,
+   "phases_s": {
+    "member_keys": 0.0008127089822664857,
+    "client_share_seal": 1.133817584021017,
+    "member_open": 0.19037379196379334,
+    "member_validate": 0.970125374966301,
+    "public_decode": 0.004671375034376979,
+    "aggregate": 0.2961913750041276
+   },
+   "bytes": {
+    "epk": 28980,
+    "shares": 72582480,
+    "commit": 22068,
+    "member_scalars": 208980,
+    "member_agg": 3621780
+   },
+   "bytes_total": 76464288,
+   "bytes_per_agent_upload": 3629124.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 400640,
+   "max_abs_error_vs_plaintext_cc": 0.00023345545888016697,
+   "relative_error_vs_plaintext_cc": 0.02366358541993725
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 40,
+   "m": 9,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 1.0903914580121636,
+   "phases_s": {
+    "member_keys": 0.0008773331064730883,
+    "client_share_seal": 0.5960787499789149,
+    "member_open": 0.09938745899125934,
+    "member_validate": 0.29107612499501556,
+    "public_decode": 0.009068666957318783,
+    "aggregate": 0.08837695803958923
+   },
+   "bytes": {
+    "epk": 28980,
+    "shares": 19985760,
+    "commit": 22068,
+    "member_scalars": 396180,
+    "member_agg": 492300
+   },
+   "bytes_total": 20925288,
+   "bytes_per_agent_upload": 499644.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 53560,
+   "max_abs_error_vs_plaintext_cc": 0.0002309652438957444,
+   "relative_error_vs_plaintext_cc": 0.03200266446564655
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 40,
+   "m": 9,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 5.980811333982274,
+   "phases_s": {
+    "member_keys": 0.001105042058043182,
+    "client_share_seal": 2.8260382500011474,
+    "member_open": 0.3472641250118613,
+    "member_validate": 2.124000333948061,
+    "public_decode": 0.010094333090819418,
+    "aggregate": 0.6515776669839397
+   },
+   "bytes": {
+    "epk": 28980,
+    "shares": 145164960,
+    "commit": 22068,
+    "member_scalars": 396180,
+    "member_agg": 3621780
+   },
+   "bytes_total": 149233968,
+   "bytes_per_agent_upload": 3629124.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 401280,
+   "max_abs_error_vs_plaintext_cc": 0.0002466407902311195,
+   "relative_error_vs_plaintext_cc": 0.038055347499191566
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 100,
+   "m": 13,
+   "t": 6,
+   "d": 6535,
+   "round_wall_s": 4.070719667011872,
+   "phases_s": {
+    "member_keys": 0.0012941249879077077,
+    "client_share_seal": 2.44319879100658,
+    "member_open": 0.2581591659691185,
+    "member_validate": 0.9697111250134185,
+    "public_decode": 0.0255959170171991,
+    "aggregate": 0.3575881669530645
+   },
+   "bytes": {
+    "epk": 41860,
+    "shares": 72170800,
+    "commit": 31876,
+    "member_scalars": 1383460,
+    "member_agg": 711100
+   },
+   "bytes_total": 74339096,
+   "bytes_per_agent_upload": 721708.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 55480,
+   "max_abs_error_vs_plaintext_cc": 0.00012943150590999895,
+   "relative_error_vs_plaintext_cc": 0.0331664411921798
+  },
+  {
+   "backend": "fips",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 100,
+   "m": 13,
+   "t": 6,
+   "d": 50000,
+   "round_wall_s": 28.82405979197938,
+   "phases_s": {
+    "member_keys": 0.0019483750220388174,
+    "client_share_seal": 14.741415750002488,
+    "member_open": 1.959476749994792,
+    "member_validate": 9.754126042011194,
+    "public_decode": 0.027375207981094718,
+    "aggregate": 2.3001028340077028
+   },
+   "bytes": {
+    "epk": 41860,
+    "shares": 524206800,
+    "commit": 31876,
+    "member_scalars": 1383460,
+    "member_agg": 5231460
+   },
+   "bytes_total": 530895456,
+   "bytes_per_agent_upload": 5242068.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 403200,
+   "max_abs_error_vs_plaintext_cc": 0.00015277094581018363,
+   "relative_error_vs_plaintext_cc": 0.03671304578893918
+  },
+  {
+   "backend": "classical",
+   "policy": "correct",
+   "norm_mode": "exact",
+   "n": 20,
+   "m": 17,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 1.9346317499876022,
+   "phases_s": {
+    "member_keys": 0.010125334025360644,
+    "client_share_seal": 0.6204279580852017,
+    "member_open": 0.2719782080966979,
+    "member_validate": 0.8991345829563215,
+    "public_decode": 0.01756075001321733,
+    "aggregate": 0.10443687497172505
+   },
+   "bytes": {
+    "epk": 1632,
+    "shares": 17824160,
+    "commit": 1632,
+    "zero_sharing": 82688,
+    "member_scalars": 180608,
+    "member_agg": 889848
+   },
+   "bytes_total": 18980568,
+   "bytes_per_agent_upload": 891208.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 52920,
+   "max_abs_error_vs_plaintext_cc": 2.075032353160769e-05,
+   "relative_error_vs_plaintext_cc": 0.0024195892463585536
+  },
+  {
+   "backend": "classical",
+   "policy": "correct",
+   "norm_mode": "exact",
+   "n": 20,
+   "m": 17,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 7.2397687080083415,
+   "phases_s": {
+    "member_keys": 0.006601457949727774,
+    "client_share_seal": 2.752711500041187,
+    "member_open": 0.5348928329767659,
+    "member_validate": 2.6983937080949545,
+    "public_decode": 0.023800999973900616,
+    "aggregate": 1.1988646250683814
+   },
+   "bytes": {
+    "epk": 1632,
+    "shares": 136048960,
+    "commit": 1632,
+    "zero_sharing": 82688,
+    "member_scalars": 180608,
+    "member_agg": 6801088
+   },
+   "bytes_total": 143116608,
+   "bytes_per_agent_upload": 6802448.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 400640,
+   "max_abs_error_vs_plaintext_cc": 2.3730069889182567e-05,
+   "relative_error_vs_plaintext_cc": 0.002474623024340569
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 20,
+   "m": 9,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 0.773508790996857,
+   "phases_s": {
+    "member_keys": 0.004845791961997747,
+    "client_share_seal": 0.3893135420512408,
+    "member_open": 0.14660062501206994,
+    "member_validate": 0.14930358296260238,
+    "public_decode": 0.007332834065891802,
+    "aggregate": 0.07257754099555314
+   },
+   "bytes": {
+    "epk": 864,
+    "shares": 9436320,
+    "commit": 864,
+    "member_scalars": 187776,
+    "member_agg": 471096
+   },
+   "bytes_total": 10096920,
+   "bytes_per_agent_upload": 471816.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 52920,
+   "max_abs_error_vs_plaintext_cc": 0.00017053904865209704,
+   "relative_error_vs_plaintext_cc": 0.021015770449373902
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 20,
+   "m": 9,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 4.539025874924846,
+   "phases_s": {
+    "member_keys": 0.0029612499056383967,
+    "client_share_seal": 2.353818375035189,
+    "member_open": 0.45077495789155364,
+    "member_validate": 1.340600375086069,
+    "public_decode": 0.007402040995657444,
+    "aggregate": 0.3699475000612438
+   },
+   "bytes": {
+    "epk": 864,
+    "shares": 72025920,
+    "commit": 864,
+    "member_scalars": 187776,
+    "member_agg": 3600576
+   },
+   "bytes_total": 75816000,
+   "bytes_per_agent_upload": 3601296.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 400640,
+   "max_abs_error_vs_plaintext_cc": 0.0003280562615437764,
+   "relative_error_vs_plaintext_cc": 0.03107024170522203
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 40,
+   "m": 9,
+   "t": 4,
+   "d": 6535,
+   "round_wall_s": 2.0788678330136463,
+   "phases_s": {
+    "member_keys": 0.0036715840687975287,
+    "client_share_seal": 0.989515999914147,
+    "member_open": 0.4565401249565184,
+    "member_validate": 0.43304370797704905,
+    "public_decode": 0.019993500085547566,
+    "aggregate": 0.15909845801070333
+   },
+   "bytes": {
+    "epk": 864,
+    "shares": 18872640,
+    "commit": 864,
+    "member_scalars": 374976,
+    "member_agg": 471096
+   },
+   "bytes_total": 19720440,
+   "bytes_per_agent_upload": 471816.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 53560,
+   "max_abs_error_vs_plaintext_cc": 0.00014538539504818995,
+   "relative_error_vs_plaintext_cc": 0.026037072116483633
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 40,
+   "m": 9,
+   "t": 4,
+   "d": 50000,
+   "round_wall_s": 8.532740291091613,
+   "phases_s": {
+    "member_keys": 0.007436582935042679,
+    "client_share_seal": 3.7243897079024464,
+    "member_open": 0.9784542500274256,
+    "member_validate": 2.9982902909396216,
+    "public_decode": 0.023949499940499663,
+    "aggregate": 0.777623875066638
+   },
+   "bytes": {
+    "epk": 864,
+    "shares": 144051840,
+    "commit": 864,
+    "member_scalars": 374976,
+    "member_agg": 3600576
+   },
+   "bytes_total": 148029120,
+   "bytes_per_agent_upload": 3601296.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 401280,
+   "max_abs_error_vs_plaintext_cc": 0.00029544837684746927,
+   "relative_error_vs_plaintext_cc": 0.047563392256969116
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 100,
+   "m": 13,
+   "t": 6,
+   "d": 6535,
+   "round_wall_s": 7.484865208039992,
+   "phases_s": {
+    "member_keys": 0.00530104199424386,
+    "client_share_seal": 4.267208999954164,
+    "member_open": 1.2444609169615433,
+    "member_validate": 1.4553332079667598,
+    "public_decode": 0.04075237491633743,
+    "aggregate": 0.44986425002571195
+   },
+   "bytes": {
+    "epk": 1248,
+    "shares": 68151200,
+    "commit": 1248,
+    "member_scalars": 1352832,
+    "member_agg": 680472
+   },
+   "bytes_total": 70187000,
+   "bytes_per_agent_upload": 681512.0,
+   "plaintext_fedavg_upload_per_agent": 26140,
+   "classical_secagg_upload_per_agent": 55480,
+   "max_abs_error_vs_plaintext_cc": 0.00011738015755423988,
+   "relative_error_vs_plaintext_cc": 0.0322160497547541
+  },
+  {
+   "backend": "classical",
+   "policy": "abort",
+   "norm_mode": "sketch",
+   "n": 100,
+   "m": 13,
+   "t": 6,
+   "d": 50000,
+   "round_wall_s": 91.20487766596489,
+   "phases_s": {
+    "member_keys": 0.006606374983675778,
+    "client_share_seal": 24.544583125039935,
+    "member_open": 8.659409916959703,
+    "member_validate": 44.16471250005998,
+    "public_decode": 0.21554341702722013,
+    "aggregate": 13.468448750092648
+   },
+   "bytes": {
+    "epk": 1248,
+    "shares": 520187200,
+    "commit": 1248,
+    "member_scalars": 1352832,
+    "member_agg": 5200832
+   },
+   "bytes_total": 526743360,
+   "bytes_per_agent_upload": 5201872.0,
+   "plaintext_fedavg_upload_per_agent": 200000,
+   "classical_secagg_upload_per_agent": 403200,
+   "max_abs_error_vs_plaintext_cc": 0.00017346805636924562,
+   "relative_error_vs_plaintext_cc": 0.041591137211661015
+  }
+ ],
+ "ascon_end_to_end": {
+  "n": 6,
+  "m": 5,
+  "t": 2,
+  "d": 300,
+  "rounds": [
+   {
+    "round": 1,
+    "wall_s": 25.755051040905528,
+    "accepted": 6,
+    "max_abs_error": 0.0017368300874174743
+   },
+   {
+    "round": 2,
+    "wall_s": 25.375404124963097,
+    "accepted": 6,
+    "max_abs_error": 0.002217302634959603
+   }
+  ],
+  "ascon_p_calls_total": 734509,
+  "audit_root": "e6826c0a78caa0546fe54369a4f99a325049b6b14ac84c18d21ad59162b1c33b"
+ }
+}

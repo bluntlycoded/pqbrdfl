@@ -1,0 +1,96 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.0,
+  "attack": "none",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "central",
+  "rounds": 40,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 1,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 10,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.5
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [],
+ "final": {
+  "accuracy": 0.9825099375354912,
+  "macro_f1": 0.9669098545713153,
+  "precision": 0.9793588054457619,
+  "recall": 0.9882561489031686,
+  "f1": 0.9837873607587956,
+  "fpr": 0.02190121155638397,
+  "auc": 0.9990388127990609,
+  "backdoor_asr": 0.2831819189009528,
+  "round": 40
+ },
+ "history": [
+  {
+   "accuracy": 0.9809199318568995,
+   "macro_f1": 0.963825246433817,
+   "precision": 0.9892086330935251,
+   "recall": 0.9749612231331708,
+   "f1": 0.9820332552170516,
+   "fpr": 0.011183597390493943,
+   "auc": 0.9985255910800507,
+   "backdoor_asr": 0.2803013516507866,
+   "round": 10
+  },
+  {
+   "accuracy": 0.9830777967064168,
+   "macro_f1": 0.9682923501130171,
+   "precision": 0.9918882379450202,
+   "recall": 0.975404387325504,
+   "f1": 0.9835772539381075,
+   "fpr": 0.008387698042870456,
+   "auc": 0.9990511515970535,
+   "backdoor_asr": 0.2884998892089519,
+   "round": 20
+  },
+  {
+   "accuracy": 0.9802385008517888,
+   "macro_f1": 0.9631094662690122,
+   "precision": 0.9720416124837451,
+   "recall": 0.9937957013073344,
+   "f1": 0.9827982907855812,
+   "fpr": 0.03005591798695247,
+   "auc": 0.9989865665079797,
+   "backdoor_asr": 0.2840682472856193,
+   "round": 30
+  },
+  {
+   "accuracy": 0.9825099375354912,
+   "macro_f1": 0.9669098545713153,
+   "precision": 0.9793588054457619,
+   "recall": 0.9882561489031686,
+   "f1": 0.9837873607587956,
+   "fpr": 0.02190121155638397,
+   "auc": 0.9990388127990609,
+   "backdoor_asr": 0.2831819189009528,
+   "round": 40
+  }
+ ],
+ "wall_seconds": 4.581414750078693,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}

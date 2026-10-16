@@ -1,0 +1,73 @@
+{
+ "config": {
+  "dataset": "cicids",
+  "data_root": null,
+  "n_agents": 20,
+  "alpha": 0.5,
+  "byz_frac": 0.2,
+  "attack": "backdoor",
+  "protocol_attack": null,
+  "member_attack": "corrupt_agg",
+  "aggregator": "mk_cc",
+  "rounds": 30,
+  "local_epochs": 1,
+  "lr": 0.003,
+  "batch": 128,
+  "seed": 0,
+  "m": 9,
+  "t": 4,
+  "norm_mode": "sketch",
+  "decode_policy": "abort",
+  "k_proj": 128,
+  "backend": "fips",
+  "telemetry": "none",
+  "tamper_frac": 0.3,
+  "eval_every": 30,
+  "max_train_per_agent": 4000,
+  "sf_kappa": 2.0,
+  "mk_q": 0.3,
+  "worker_momentum": 0.0,
+  "byz_momentum": true,
+  "agg_noise": 0.0,
+  "input_clip": false,
+  "trigger": "inrange"
+ },
+ "dataset": "CICIDS2017",
+ "synthetic_data": false,
+ "model_params": 6758,
+ "byzantine": [
+  "sw05",
+  "sw09",
+  "sw11",
+  "sw14"
+ ],
+ "final": {
+  "accuracy": 0.9603634298693924,
+  "macro_f1": 0.9197526970696662,
+  "precision": 0.977366255144033,
+  "recall": 0.9472634611123422,
+  "f1": 0.9620794418813999,
+  "fpr": 0.023066169617893754,
+  "auc": 0.9925856214489817,
+  "backdoor_asr": 0.965876357190339,
+  "round": 30
+ },
+ "history": [
+  {
+   "accuracy": 0.9603634298693924,
+   "macro_f1": 0.9197526970696662,
+   "precision": 0.977366255144033,
+   "recall": 0.9472634611123422,
+   "f1": 0.9620794418813999,
+   "fpr": 0.023066169617893754,
+   "auc": 0.9925856214489817,
+   "backdoor_asr": 0.965876357190339,
+   "round": 30
+  }
+ ],
+ "wall_seconds": 2.255481875035912,
+ "telemetry": {
+  "batches": 0,
+  "rejected": 0
+ }
+}
